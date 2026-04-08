@@ -1,0 +1,171 @@
+.fds-wrap {
+    margin: 20px 0;
+}
+.fds-wrap .fds-search {
+margin-bottom: 20px;
+}
+.fds-table {
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #cccccc;
+    border-collapse: separate;
+    border-radius: 10px;
+    border-spacing: 0;
+    box-shadow: 1px 1px 0 #ffffff;
+    color: #666666;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 0 15px 0;
+    text-shadow: 1px 1px 0 #ffffff;
+    transition: all .4s ease-in;
+    vertical-align: baseline;
+}
+.fds-table > thead > tr > th.fds-sorttype {
+    text-align: center;
+    width: 75px;
+}
+.fds-table > tfoot > tr > td {
+    background: #ffffff;
+    box-shadow: none;
+    padding: 15px;
+    border: 0;
+}
+.fds-table > thead > tr > th {
+    background: #ffffff;
+    box-shadow: none;
+    border-top: 1px solid #F1F1F1;
+    border-bottom: 1px solid #F1F1F1;
+    border-left: 0;
+    border-right: 0;
+    color: #666666;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.fds-table > thead > tr:last-child > td:first-child {
+    border-top-left-radius: 10px;
+}
+.fds-table > thead > tr:last-child > td:last-child {
+    border-top-right-radius: 10px;
+}
+.fds-table > tfoot > tr:last-child > td:first-child {
+    border-bottom-left-radius: 10px;
+}
+.fds-table > tfoot > tr:last-child > td:last-child {
+     border-bottom-right-radius: 10px;
+}
+.fds-table > tfoot > tr > td > .fds-pagination {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.fds-table > tfoot > tr > td > .fds-pagination > ul {
+    background-color: transparent;
+    box-shadow: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.fds-table > tfoot > tr > td > .fds-pagination > ul > li {
+    display: inline;
+    margin: 0!important;
+}
+.fds-table > tbody > tr > td a {
+    display: inline-block;
+    padding: 6px 11px;
+    font-size: 12px;
+    border-radius: 999px;
+    text-decoration: none;
+    border: 1px solid #666666;
+    color: #666666;
+    background: #fff;
+}
+.fds-table > tbody > tr > td {
+    padding: 20px 11px;
+}
+
+.fds-table > tbody > tr > td a:hover {
+    background: #666666;
+    color: #fff;
+    box-shadow: none;
+}
+
+.fds-table > tfoot > tr > td > .fds-pagination > ul > li > a {
+    display: inline-block;
+    padding: 6px 11px;
+    font-size: 12px;
+    border-radius: 50px;
+    color: #666666;
+    background: #fff;
+    text-decoration: none;
+    margin: 0 2px;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.fds-table > tfoot > tr > td > .fds-pagination > ul > li > a:hover {
+    background: #D8D8D8;
+    color: #666666;
+}
+
+.fds-table > tfoot > tr > td > .fds-pagination > ul > li.active > a {
+    background: #D8D8D8;
+    color: #666666;
+    font-weight: bold;
+    cursor: default;
+}
+
+.fds-table > tfoot > tr > td > .fds-pagination > ul > li.disabled > a {
+    color: #bbb;
+    cursor: default;
+    pointer-events: none;
+}
+
+.fds-upload-form {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.fds-notice {
+    padding: 12px 14px;
+    border-radius: 10px;
+    margin: 12px 0;
+    background: #eef7ee;
+    color: #1e6b2d;
+}
+
+.fds-error {
+    padding: 12px 14px;
+    border-radius: 10px;
+    margin: 12px 0;
+    background: #fdeeee;
+    color: #8a1f1f;
+}
+
+.fds-product-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.fds-register-form,
+.fds-account {
+  margin: 20px 0;
+}
+
+.fds-register-form input[type="email"] {
+  max-width: 320px;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-right: 10px;
+}
