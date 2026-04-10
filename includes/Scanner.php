@@ -7,7 +7,7 @@ namespace Fevdi\FdsManager;
 final class Scanner
 {
     /**
-     * @return array<int, array{name:string,size:string,date:string,timestamp:int,ext:string}>
+     * @return array<int, array{name:string,label:string,size:string,size_bytes:int,date:string,timestamp:int,ext:string}>
      */
     public static function getFiles(string $dir): array
     {
@@ -39,6 +39,7 @@ final class Scanner
                     'name'  => $file,
                     'label' => $label,
                     'size'  => size_format(filesize($full) ?: 0),
+                    'size_bytes' => (int) (filesize($full) ?: 0),
                     'date'  => date_i18n('d/m/Y H:i', $timestamp),
                     'timestamp' => $timestamp,
                     'ext'   => strtolower((string) pathinfo($file, PATHINFO_EXTENSION)),

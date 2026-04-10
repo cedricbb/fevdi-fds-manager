@@ -8,7 +8,7 @@ margin-bottom: 20px;
     background: none repeat scroll 0 0 #ffffff;
     border: 1px solid #cccccc;
     border-collapse: separate;
-    border-radius: 10px;
+    border-radius: 8px;
     border-spacing: 0;
     box-shadow: 1px 1px 0 #ffffff;
     color: #666666;
@@ -43,20 +43,20 @@ margin-bottom: 20px;
     padding: 15px;
     text-transform: uppercase;
     vertical-align: middle;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 .fds-table > thead > tr:last-child > td:first-child {
-    border-top-left-radius: 10px;
+    border-top-left-radius: 8px;
 }
 .fds-table > thead > tr:last-child > td:last-child {
-    border-top-right-radius: 10px;
+    border-top-right-radius: 8px;
 }
 .fds-table > tfoot > tr:last-child > td:first-child {
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 8px;
 }
 .fds-table > tfoot > tr:last-child > td:last-child {
-     border-bottom-right-radius: 10px;
+     border-bottom-right-radius: 8px;
 }
 .fds-table > tfoot > tr > td > .fds-pagination {
     border: 0;
@@ -78,7 +78,7 @@ margin-bottom: 20px;
     display: inline-block;
     padding: 6px 11px;
     font-size: 12px;
-    border-radius: 999px;
+    border-radius: 8px;
     text-decoration: none;
     border: 1px solid #666666;
     color: #666666;
@@ -98,7 +98,7 @@ margin-bottom: 20px;
     display: inline-block;
     padding: 6px 11px;
     font-size: 12px;
-    border-radius: 50px;
+    border-radius: 8px;
     color: #666666;
     background: #fff;
     text-decoration: none;
@@ -135,7 +135,7 @@ margin-bottom: 20px;
 
 .fds-notice {
     padding: 12px 14px;
-    border-radius: 10px;
+    border-radius: 8px;
     margin: 12px 0;
     background: #eef7ee;
     color: #1e6b2d;
@@ -143,7 +143,7 @@ margin-bottom: 20px;
 
 .fds-error {
     padding: 12px 14px;
-    border-radius: 10px;
+    border-radius: 8px;
     margin: 12px 0;
     background: #fdeeee;
     color: #8a1f1f;
@@ -168,4 +168,360 @@ margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
   margin-right: 10px;
+}
+
+.fds-admin {
+    color: #1f2933;
+}
+
+.fds-admin-hero {
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #d9e2ec;
+    border-left: 5px solid #00856f;
+    border-radius: 8px;
+    box-shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    margin: 18px 0 20px;
+    padding: 24px;
+}
+
+.fds-admin-hero h1 {
+    color: #111827;
+    font-size: 30px;
+    line-height: 1.15;
+    margin: 4px 0 8px;
+}
+
+.fds-admin-hero p {
+    margin: 0;
+    max-width: 680px;
+}
+
+.fds-kicker {
+    color: #00856f;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.fds-admin-grid {
+    align-items: start;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: minmax(0, 1fr) 340px;
+}
+
+.fds-admin-panel {
+    background: #ffffff;
+    border: 1px solid #d9e2ec;
+    border-radius: 8px;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.07);
+    padding: 20px;
+}
+
+.fds-admin-panel h2 {
+    color: #111827;
+    font-size: 20px;
+    line-height: 1.25;
+    margin: 0 0 4px;
+}
+
+.fds-admin-panel p {
+    color: #5f6c7b;
+    margin: 0;
+}
+
+.fds-panel-heading {
+    align-items: start;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.fds-table-count {
+    background: #eefaf7;
+    border: 1px solid #b8e3db;
+    border-radius: 8px;
+    color: #006b5a;
+    display: inline-flex;
+    font-weight: 700;
+    padding: 8px 10px;
+    white-space: nowrap;
+}
+
+.fds-admin-filters,
+.fds-admin-upload {
+    display: grid;
+    gap: 10px;
+}
+
+.fds-admin-filters {
+    grid-template-columns: minmax(220px, 1.5fr) repeat(5, minmax(120px, 1fr));
+    margin-bottom: 16px;
+}
+
+.fds-admin-filters input,
+.fds-admin-filters select,
+.fds-admin-upload select {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    box-shadow: none;
+    min-height: 40px;
+    padding: 6px 10px;
+    width: 100%;
+}
+
+.fds-admin-table-shell {
+    overflow-x: auto;
+}
+
+.fds-admin-table {
+    border-color: #d9e2ec;
+    box-shadow: none;
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
+    min-width: 760px;
+    text-shadow: none;
+    width: 100%;
+}
+
+.fds-admin-table > thead > tr > th {
+    background: #f8fafc;
+    border-bottom: 1px solid #d9e2ec;
+    color: #334155;
+    text-shadow: none;
+}
+
+.fds-admin-table > thead > tr > th button {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.fds-admin-table > thead > tr > th button[data-order="asc"]::after {
+    content: " ↑";
+}
+
+.fds-admin-table > thead > tr > th button[data-order="desc"]::after {
+    content: " ↓";
+}
+
+.fds-admin-table > tbody > tr > td {
+    border-bottom: 1px solid #eef2f7;
+    color: #243b53;
+    padding: 14px 12px;
+    vertical-align: middle;
+}
+
+.fds-file-type {
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+    border-radius: 8px;
+    color: #9a3412;
+    display: inline-flex;
+    font-weight: 700;
+    padding: 4px 8px;
+    text-transform: uppercase;
+}
+
+.fds-file-name {
+    color: #66788a;
+    display: block;
+    margin-top: 3px;
+}
+
+.fds-admin-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.fds-admin-btn,
+.fds-admin-link,
+.fds-admin-danger,
+.fds-btn {
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 700;
+    justify-content: center;
+    min-height: 38px;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+.fds-admin-btn,
+.fds-btn {
+    background: #00856f;
+    border: 1px solid #00856f;
+    color: #ffffff;
+}
+
+.fds-admin-btn:hover,
+.fds-btn:hover {
+    background: #006b5a;
+    border-color: #006b5a;
+    color: #ffffff;
+}
+
+.fds-admin-btn-secondary,
+.fds-admin-link {
+    background: #ffffff;
+    border: 1px solid #00856f;
+    color: #006b5a;
+}
+
+.fds-admin-table > tbody > tr > td a.fds-admin-link {
+    background: #ffffff;
+    border: 1px solid #00856f;
+    color: #006b5a;
+    text-shadow: none;
+}
+
+.fds-admin-btn-secondary:hover,
+.fds-admin-link:hover {
+    background: #eefaf7;
+    color: #004d40;
+}
+
+.fds-admin-table > tbody > tr > td a.fds-admin-link:hover {
+    background: #eefaf7;
+    color: #004d40;
+}
+
+.fds-admin-danger {
+    background: #ffffff;
+    border: 1px solid #dc2626;
+    color: #b91c1c;
+}
+
+.fds-admin-danger:hover {
+    background: #fef2f2;
+    color: #991b1b;
+}
+
+.fds-admin-pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+
+.fds-admin-pagination button {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    color: #334155;
+    cursor: pointer;
+    min-height: 34px;
+    min-width: 34px;
+}
+
+.fds-admin-pagination button.is-active {
+    background: #00856f;
+    border-color: #00856f;
+    color: #ffffff;
+}
+
+.fds-admin-pagination button:disabled {
+    color: #94a3b8;
+    cursor: default;
+}
+
+.fds-upload-panel {
+    position: sticky;
+    top: 44px;
+}
+
+.fds-dropzone {
+    align-items: center;
+    background: #f8fafc;
+    border: 1px dashed #94a3b8;
+    border-radius: 8px;
+    color: #334155;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    min-height: 120px;
+    padding: 16px;
+    text-align: center;
+}
+
+.fds-dropzone input {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.fds-admin-message {
+    border-radius: 8px;
+    margin-top: 12px;
+    min-height: 20px;
+    padding: 0;
+}
+
+.fds-admin-message.is-loading,
+.fds-admin-message.is-success,
+.fds-admin-message.is-error {
+    padding: 10px 12px;
+}
+
+.fds-admin-message.is-loading {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.fds-admin-message.is-success {
+    background: #eefaf7;
+    color: #006b5a;
+}
+
+.fds-admin-message.is-error {
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+.fds-logs-panel {
+    margin-top: 20px;
+}
+
+@media (max-width: 1180px) {
+    .fds-admin-grid,
+    .fds-admin-filters {
+        grid-template-columns: 1fr;
+    }
+
+    .fds-upload-panel {
+        position: static;
+    }
+}
+
+@media (max-width: 782px) {
+    .fds-admin-hero,
+    .fds-panel-heading {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .fds-admin-hero {
+        padding: 18px;
+    }
+
+    .fds-admin-hero h1 {
+        font-size: 24px;
+    }
 }

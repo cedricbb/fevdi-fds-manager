@@ -44,6 +44,8 @@ final class Download
             wp_die('Fichier introuvable.');
         }
 
+        Logs::addLog(get_current_user_id(), basename($realFile), $dirKey);
+
         while (ob_get_level() > 0) {
             ob_end_clean();
         }
